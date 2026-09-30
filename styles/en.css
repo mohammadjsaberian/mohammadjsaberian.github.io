@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/inter/Inter-Variable.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+}
+
+html[lang="en"] {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 9.75pt;
+  line-height: 1.43;
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ language }}" dir="{{ direction }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ resume_title }}</title>
+  <link rel="stylesheet" href="../../styles/base.css">
+  <link rel="stylesheet" href="../../styles/resume.css">
+  <link rel="stylesheet" href="../../styles/{{ language }}.css">
+  <link rel="stylesheet" href="../../styles/print.css">
+</head>
+<body>
+  <main class="resume">
+    {% include "partials/header.html.j2" %}
+    {% include "partials/summary.html.j2" %}
+    {% include "partials/skills.html.j2" %}
+    {% include "partials/experience.html.j2" %}
+    {% include "partials/education.html.j2" %}
+  </main>
+</body>
+</html>

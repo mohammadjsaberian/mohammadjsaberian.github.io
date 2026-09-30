@@ -1,0 +1,32 @@
+@page {
+  size: 210mm 305mm;
+  margin: 9mm 10mm;
+}
+
+@media print {
+  :root {
+    background: #ffffff;
+  }
+
+  .resume {
+    width: 190mm;
+    max-width: none;
+    min-height: 287mm;
+    margin: 0;
+    padding: 0;
+  }
+
+  .skill-row {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .skill-row dt {
+    flex: 0 0 31mm;
+    margin-right: 2.5mm;
+  }
+
+  .skill-row dd {
+    flex: 1 1 auto;
+  }
+}

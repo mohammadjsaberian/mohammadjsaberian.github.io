@@ -1,0 +1,12 @@
+<header class="resume-header">
+  <div class="resume-header__identity">
+    <h1 class="name">{{ name_placeholder }}</h1>
+    <p class="role">{{ resume_title }}</p>
+  </div>
+  <address class="resume-header__contact">
+    <a href="mailto:{{ profile.email }}" dir="ltr">{{ profile.email }}</a>
+    <a href="tel:{{ profile.phone }}" dir="ltr">{{ profile.phone }}</a>
+    <span>{{ profile.location[language] }}</span>
+    <span>{{ profile.age[language] }}</span>
+  </address>
+</header>

@@ -1,0 +1,9 @@
+{% if education %}
+<section class="education" aria-labelledby="education-heading">
+  <h2 id="education-heading">{{ education_heading }}</h2>
+  <article class="education-item">
+    <h3>{{ education.degree[language] }}</h3>
+    <p>{{ education.university[language] }}</p>
+  </article>
+</section>
+{% endif %}

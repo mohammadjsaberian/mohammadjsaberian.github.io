@@ -1,0 +1,16 @@
+{% if experience %}
+<section class="experience" aria-labelledby="experience-heading">
+  <h2 id="experience-heading">{{ experience_heading }}</h2>
+  {% for item in experience %}
+  <article class="experience-item">
+    <header class="experience-item__heading">
+      <h3>{{ item.role[language] }} <span class="experience-item__separator">|</span> {{ item.company }}</h3>
+      <time>{{ item.date[language] }}</time>
+    </header>
+    <ul>{% for achievement in item.achievements[language] %}<li>{{ achievement | render_achievement(projects) }}</li>{% endfor %}</ul>
+    <p class="experience-item__meta"><span class="experience-item__label">Tech:</span> <bdi dir="ltr">{{ item.tech | join(' · ') }}</bdi></p>
+    <p class="experience-item__meta"><span class="experience-item__label">Domain:</span> {{ item.domain[language] }}</p>
+  </article>
+  {% endfor %}
+</section>
+{% endif %}

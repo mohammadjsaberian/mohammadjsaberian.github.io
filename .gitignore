@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+
+output/html/*
+!output/html/.gitkeep
+output/pdf/*
+!output/pdf/.gitkeep

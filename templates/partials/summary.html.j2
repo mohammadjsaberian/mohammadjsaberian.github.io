@@ -1,0 +1,4 @@
+<section class="summary" aria-labelledby="summary-heading">
+  <h2 id="summary-heading">{{ summary_heading }}</h2>
+  <p>{% for segment in summary.segments %}{% if segment.bold %}<strong>{{ segment.text }}</strong>{% else %}{{ segment.text }}{% endif %}{% endfor %}</p>
+</section>

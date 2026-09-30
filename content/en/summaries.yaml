@@ -1,0 +1,23 @@
+shared:
+  segments:
+    - text: "Software Engineer"
+      bold: true
+    - text: " with "
+    - text: "4+ years of experience"
+      bold: true
+    - text: " focused on building "
+    - text: "complex backend services"
+      bold: true
+    - text: " and "
+    - text: "production-ready software"
+    - text: ". Experienced in "
+    - text: "system design"
+      bold: true
+    - text: ", sound architecture, and scalable solutions"
+    - text: ", with a "
+    - text: "continuous-learning and problem-solving mindset"
+    - text: "; focused on building software that "
+    - text: "improves efficiency, reduces development costs, and contributes to "
+    - text: "measurable business growth"
+      bold: true
+    - text: "."

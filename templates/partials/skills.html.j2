@@ -1,0 +1,11 @@
+<section class="skills" aria-labelledby="skills-heading">
+  <h2 id="skills-heading">{{ skills_heading }}</h2>
+  <dl class="skills-list">
+    {% for group in skills %}
+    <div class="skill-row{% if group.secondary %} skill-row--secondary{% endif %}" dir="ltr">
+      <dt>{{ group.label }}</dt>
+      <dd><bdi dir="ltr">{{ group["items"] | join(' · ') }}</bdi></dd>
+    </div>
+    {% endfor %}
+  </dl>
+</section>

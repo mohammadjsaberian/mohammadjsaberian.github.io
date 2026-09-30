@@ -1,0 +1,25 @@
+{
+  "groups": {
+    "main_languages": {"label": "Main Languages", "items": ["Go", "Python"]},
+    "main_languages_python": {"label": "Main Languages", "items": ["Python", "Go"]},
+    "go_backend": {"label": "Go Backend", "items": ["Gin", "Echo"]},
+    "python_backend": {"label": "Python Backend", "items": ["Django", "Django REST Framework", "FastAPI", "Celery", "Celery Beat"]},
+    "apis": {"label": "APIs & Service Communication", "items": ["REST APIs", "gRPC", "Protocol Buffers", "GraphQL"]},
+    "architecture": {"label": "Architecture", "items": ["System Design", "Microservices", "Service-Oriented Architecture", "Domain-Driven Design (DDD)", "Event-Driven Architecture", "API Design", "Multi-Tenant Systems", "AI-Integrated System Architecture"]},
+    "architecture_go": {"label": "Architecture", "items": ["System Design", "Microservices", "Service-Oriented Architecture", "Domain-Driven Design (DDD)", "Event-Driven Architecture", "API Design", "Distributed Backend Systems", "Multi-Tenant Systems", "AI-Integrated System Architecture"]},
+    "databases": {"label": "Databases & Storage", "items": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "MinIO"]},
+    "messaging": {"label": "Messaging & Eventing", "items": ["NATS", "RabbitMQ", "MQTT", "EMQX"]},
+    "messaging_python": {"label": "Messaging & Eventing", "items": ["RabbitMQ", "NATS", "MQTT", "EMQX"]},
+    "infrastructure": {"label": "Infrastructure & DevOps", "items": ["Linux", "Docker", "Docker Swarm", "Ansible", "CI/CD", "Traefik", "Nginx", "IaaS/PaaS Deployment"]},
+    "security": {"label": "Security & Authentication", "items": ["JWT", "Service-to-Service Authentication"]},
+    "ai_tooling": {"label": "AI & Developer Tooling", "items": ["MCP", "LLM Integration", "Codex"]},
+    "web": {"label": "Web Familiarity", "items": ["HTML", "CSS", "Next.js", "JavaScript", "TypeScript"]},
+    "engineering": {"label": "Engineering Practices", "items": ["Git", "Debugging", "Refactoring", "Configuration Management"]},
+    "scripting": {"label": "Scripting", "items": ["Bash — Working Knowledge"]}
+  },
+  "variants": {
+    "software": ["main_languages", "go_backend", "python_backend", "apis", "architecture", "databases", "messaging", "infrastructure", "security", "ai_tooling", "web", "engineering", "scripting"],
+    "go": ["main_languages", "go_backend", "apis", "architecture_go", "messaging", "databases", "infrastructure", "security", "python_backend", "ai_tooling", "web", "engineering", "scripting"],
+    "python": ["main_languages_python", "python_backend", "apis", "architecture", "databases", "messaging_python", "infrastructure", "security", "go_backend", "ai_tooling", "web", "engineering", "scripting"]
+  }
+}

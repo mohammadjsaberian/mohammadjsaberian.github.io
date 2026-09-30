@@ -1,0 +1,63 @@
+[
+  {
+    "company": "Simora",
+    "role": {"en": "Founder & Software Engineer", "fa": "بنیان‌گذار و مهندس نرم‌افزار"},
+    "date": {"en": "Jul 2026 – Present", "fa": "تیر ۱۴۰۵ – اکنون"},
+    "achievements": {
+      "en": [
+        "Designed and built **Simora**, an **AI-assisted business management and simulation platform** for small and growing businesses, with the core system developed independently in **4 months**.",
+        "Built a **multi-tenant architecture** for capturing and isolating operational business data, providing the foundation for **data-driven analysis, simulation, and decision support**.",
+        "Delivered core workflows including **business onboarding, product management, bilingual Persian/English access**, and **AI-assisted capabilities**, while keeping services independently evolvable as the platform grows."
+      ],
+      "fa": [
+        "**Simora** را به‌عنوان **پلتفرم مدیریت و شبیه‌سازی کسب‌وکار با کمک هوش مصنوعی** برای کسب‌وکارهای کوچک و در حال رشد طراحی و پیاده‌سازی کردم و هستهٔ سامانه را به‌تنهایی در **۴ ماه** توسعه دادم.",
+        "**معماری چندمستاجری** را برای ثبت و جداسازی داده‌های عملیاتی کسب‌وکار پیاده‌سازی کردم تا بستری برای **تحلیل داده‌محور، شبیه‌سازی و پشتیبانی از تصمیم‌گیری** فراهم شود.",
+        "قابلیت‌های اصلی شامل **راه‌اندازی کسب‌وکار، مدیریت محصولات و دسترسی دوزبانهٔ فارسی/انگلیسی** و **قابلیت‌های مبتنی بر هوش مصنوعی** را ارائه کردم؛ سرویس‌ها نیز متناسب با رشد پلتفرم، مستقل از یکدیگر قابل توسعه‌اند."
+      ]
+    },
+    "tech": ["Go", "Echo", "gRPC", "Protocol Buffers", "PostgreSQL", "Redis", "NATS", "Docker", "Docker Swarm", "Traefik", "Ansible", "CI/CD", "MCP", "Prometheus", "Grafana"],
+    "domain": {"en": "AI-Assisted Business Management / Business Simulation", "fa": "مدیریت کسب‌وکار با کمک هوش مصنوعی / شبیه‌سازی کسب‌وکار"}
+  },
+  {
+    "company": "Sanaap",
+    "role": {"en": "Backend Engineer", "fa": "مهندس بک‌اند"},
+    "date": {"en": "Aug 2024 – Nov 2025", "fa": "مرداد ۱۴۰۳ – آبان ۱۴۰۴"},
+    "achievements": {
+      "en": [
+        "Built a vehicle insurance **pricing engine** that calculates premiums across **15 providers concurrently** for third-party and comprehensive coverage in **under 250 ms**.",
+        "Architected a **B2B multi-tenant insurance issuance system** with fully isolated tenants and configurable UI, contracts, policies, and business rules, enabling insurers, agencies, and brokerages to independently offer multiple insurance products.",
+        "Engineered a **state engine and administrative panel** to manage insurance issuance lifecycles and tenant-specific workflows.",
+        "Developed core capabilities for Dey Insurance's **fire-inspection platform**, a production system with a large user base supporting day-to-day operational inspection workflows."
+      ],
+      "fa": [
+        "**موتور قیمت‌گذاری** بیمهٔ خودرو را پیاده‌سازی کردم که حق بیمهٔ شخص ثالث و بدنه را از **۱۵ ارائه‌دهنده به‌صورت هم‌زمان** در **کمتر از ۲۵۰ میلی‌ثانیه** محاسبه می‌کند.",
+        "**سامانهٔ چندمستاجری B2B صدور بیمه** را معماری کردم؛ مستاجران کاملاً از هم جدا هستند و رابط کاربری، قراردادها، بیمه‌نامه‌ها و قواعد کسب‌وکار برای هر کدام مستقل تنظیم می‌شود تا شرکت‌های بیمه، نمایندگی‌ها و کارگزاری‌ها بتوانند محصولات بیمه‌ای متنوع ارائه کنند.",
+        "**موتور وضعیت و پنل مدیریتی** را برای مدیریت چرخهٔ صدور بیمه و گردش‌کارهای ویژهٔ هر مستاجر توسعه دادم.",
+        "در توسعهٔ قابلیت‌های اصلی **سامانهٔ بازرسی آتش‌سوزی بیمهٔ دی** مشارکت داشتم؛ سامانه‌ای عملیاتی با کاربران فراوان که از فرایندهای روزمرهٔ بازرسی پشتیبانی می‌کند."
+      ]
+    },
+    "tech": ["Python", "Django", "Django REST Framework", "Celery", "Celery Beat", "PostgreSQL", "Redis", "Elasticsearch", "MinIO", "RabbitMQ", "Docker"],
+    "domain": {"en": "Insurance / InsurTech", "fa": "بیمه / InsurTech"}
+  },
+  {
+    "company": "Metable",
+    "role": {"en": "Software Engineer", "fa": "مهندس نرم‌افزار"},
+    "date": {"en": "Jan 2023 – Jul 2024", "fa": "دی ۱۴۰۱ – تیر ۱۴۰۳"},
+    "achievements": {
+      "en": [
+        "Led the software delivery of **Danab**, a **smart agriculture and irrigation project**, from design through deployment on top of the Patriot platform.",
+        "Designed and built **Patriot**, an **IoT system** enabling device-to-cloud communication and real-time pub/sub workloads, serving both connected devices and third-party applications through platform APIs.",
+        "Scaled the system horizontally and vertically, supporting **500+ connected devices**, **300+ messages/sec at peak**, and **50 GB+ of IoT data** within the first months of operation.",
+        "Implemented **device and server authentication and authorization** based on company security policies."
+      ],
+      "fa": [
+        "راهبری تحویل نرم‌افزار **Danab**، پروژهٔ **کشاورزی هوشمند و آبیاری**، را از طراحی تا استقرار بر بستر Patriot بر عهده داشتم.",
+        "**Patriot** را به‌عنوان یک **سامانهٔ IoT** برای ارتباط دستگاه‌ها با فضای ابری و تبادل بلادرنگ پیام به روش pub/sub طراحی و پیاده‌سازی کردم؛ این پلتفرم از طریق API به دستگاه‌های متصل و برنامه‌های شخص ثالث سرویس می‌دهد.",
+        "سامانه را به‌صورت افقی و عمودی مقیاس دادم تا در ماه‌های نخست بهره‌برداری از **بیش از ۵۰۰ دستگاه متصل**، **بیش از ۳۰۰ پیام در ثانیه در اوج بار** و **بیش از ۵۰ گیگابایت دادهٔ IoT** پشتیبانی کند.",
+        "**احراز هویت و مجوزدهی دستگاه‌ها و سرورها** را بر اساس سیاست‌های امنیتی شرکت پیاده‌سازی کردم."
+      ]
+    },
+    "tech": ["Python", "Django", "Django REST Framework", "Celery", "Celery Beat", "PostgreSQL", "MongoDB", "MQTT", "EMQX", "Docker", "Nginx", "CI/CD"],
+    "domain": {"en": "IoT / Smart Agriculture", "fa": "IoT / کشاورزی هوشمند"}
+  }
+]
