@@ -4,7 +4,6 @@ import json
 import re
 from pathlib import Path
 from typing import Dict, List, Optional, Union
-
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup, escape
 
