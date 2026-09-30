@@ -23,8 +23,6 @@ def yaml_value(value: str) -> Union[str, bool]:
     if value in {"true", "false"}:
         return value == "true"
     return value.strip('"')
-
-
 def load_yaml(path: Path) -> dict:
     """Load the small YAML subset used by the initial summary and variant files."""
     lines = path.read_text(encoding="utf-8").splitlines()
