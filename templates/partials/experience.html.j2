@@ -1,6 +1,6 @@
 {% if experience %}
-<section class="experience" aria-labelledby="experience-heading">
-  <h2 id="experience-heading">{{ experience_heading }}</h2>
+<section class="experience" aria-labelledby="{{ experience_heading_id | default('experience-heading') }}">
+  <h2 id="{{ experience_heading_id | default('experience-heading') }}">{{ experience_heading }}</h2>
   {% for item in experience %}
   <article class="experience-item">
     <header class="experience-item__heading">

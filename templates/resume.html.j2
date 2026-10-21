@@ -14,7 +14,12 @@
     {% include "partials/header.html.j2" %}
     {% include "partials/summary.html.j2" %}
     {% include "partials/skills.html.j2" %}
-    {% include "partials/experience.html.j2" %}
+    {% include "partials/experience.html.j2" %}{% if secondary_experience %}
+{% set experience = secondary_experience %}
+{% set experience_heading = secondary_heading %}
+{% set experience_heading_id = "secondary-experience-heading" %}
+{% include "partials/experience.html.j2" %}
+{% endif %}
     {% include "partials/education.html.j2" %}
   </main>
 </body>

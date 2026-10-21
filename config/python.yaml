@@ -1,5 +1,9 @@
 variant: python
-summary: shared
+summary: python
+primary_experience: Sanaap,Metable
+secondary_experience: Simora
+secondary_heading_en: Additional Engineering Work (Go)
+secondary_heading_fa: فعالیت مهندسی تکمیلی (Go)
 titles:
   en: Software Engineer — Python
   fa: مهندس نرم‌افزار — Python

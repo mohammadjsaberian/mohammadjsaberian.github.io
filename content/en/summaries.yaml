@@ -21,3 +21,14 @@ shared:
     - text: "measurable business growth"
       bold: true
     - text: "."
+python:
+  segments:
+    - text: "Software Engineer"
+      bold: true
+    - text: " with "
+    - text: "4+ years of experience"
+      bold: true
+    - text: " in backend development. Professional experience with "
+    - text: "Python, Django, and Django REST Framework"
+      bold: true
+    - text: " includes insurance pricing and issuance workflows at Sanaap and IoT platform services at Metable, with experience in APIs, multi-tenant architecture, and scaling production systems."

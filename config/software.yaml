@@ -1,5 +1,9 @@
 variant: software
 summary: shared
+primary_experience: Sanaap,Metable
+secondary_experience: Simora
+secondary_heading_en: Selected Engineering Work (Go)
+secondary_heading_fa: فعالیت مهندسی منتخب (Go)
 titles:
   en: Software Engineer
   fa: مهندس نرم‌افزار

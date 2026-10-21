@@ -22,3 +22,14 @@ shared:
       bold: true
     - text: " کمک می‌کنند"
     - text: "."
+python:
+  segments:
+    - text: "مهندس نرم‌افزار"
+      bold: true
+    - text: " با بیش از "
+    - text: "۴ سال سابقه"
+      bold: true
+    - text: " در توسعهٔ بک‌اند. تجربهٔ حرفه‌ای من با "
+    - text: "Python، Django و Django REST Framework"
+      bold: true
+    - text: " شامل گردش‌کارهای قیمت‌گذاری و صدور بیمه در Sanaap و سرویس‌های پلتفرم IoT در Metable است؛ همچنین در API، معماری چندمستاجری و مقیاس‌دهی سامانه‌های عملیاتی تجربه دارم."

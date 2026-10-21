@@ -43,9 +43,11 @@ def load_yaml(path: Path) -> dict:
             else:
                 current_mapping = {}
                 result[key] = current_mapping
+                segments = []
         elif line.lstrip().startswith("- text:"):
             segments.append({"text": yaml_value(raw_value)})
-            result["shared"] = {"segments": segments}
+            if current_mapping is not None:
+                current_mapping["segments"] = segments
         elif key == "bold" and segments:
             segments[-1][key] = yaml_value(raw_value)
         elif current_mapping is not None:
@@ -99,6 +101,7 @@ def main() -> None:
     projects = load_structured(ROOT / "data" / "projects.yaml")
     education = load_structured(ROOT / "data" / "education.yaml")
     experience = load_structured(ROOT / "data" / "experience.yaml")
+    experience_by_company = {item["company"]: item for item in experience}
 
     expected_names = {
         f"resume-{variant}-{language}.html"
@@ -111,11 +114,17 @@ def main() -> None:
     for variant_name in VARIANTS:
         variant_path = ROOT / "config" / f"{variant_name}.yaml"
         variant = load_yaml(variant_path)
+        primary_names = variant.get("primary_experience")
+        if primary_names:
+            primary_experience = [experience_by_company[name] for name in primary_names.split(",")]
+            secondary_experience = [experience_by_company[name] for name in variant["secondary_experience"].split(",")]
+        else:
+            primary_experience = experience
+            secondary_experience = []
         for language, language_settings in LANGUAGES.items():
             summaries = load_yaml(ROOT / "content" / language / "summaries.yaml")
             output_path = output_directory / f"resume-{variant['variant']}-{language}.html"
-            output_path.write_text(
-                template.render(
+            rendered_html = template.render(
                     language=language,
                     direction=language_settings["direction"],
                     name_placeholder=language_settings["name"],
@@ -127,10 +136,16 @@ def main() -> None:
                     profile=profile,
                     projects=projects,
                     experience_heading=language_settings["experience_heading"],
-                    experience=experience,
+                    experience=primary_experience,
+                    secondary_experience=secondary_experience,
+                    secondary_heading=variant.get(f"secondary_heading_{language}"),
                     education_heading=language_settings["education_heading"],
                     education=education,
-                ),
+                )
+            if secondary_experience:
+                rendered_html = re.sub(r"(?m)[ \t]+$", "", rendered_html)
+            output_path.write_text(
+                rendered_html,
                 encoding="utf-8",
             )
 
